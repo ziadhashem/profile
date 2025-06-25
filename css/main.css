@@ -1,0 +1,170 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eeeeee;
+    color: #333;
+}
+header.bg-gradient {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #eeeeee;
+    /*background: linear-gradient(135deg, #234, #243456); !* خلفية فاتحة أزرق سماوي *!*/
+    box-shadow: 0 4px 6px rgba(4,3,2,0.1);
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav.nav {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+    nav.nav a {
+        padding: 0.25rem 0.5rem;
+        font-weight: 600;
+    }
+    .d-flex.align-items-center > a.btn {
+        margin-top: 0.5rem;
+    }
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+section {
+    margin-bottom: 3rem;
+}
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+}
+.card {
+    border: #b889a9 solid ;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+footer {
+    background-color: #212529;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+/* مهارات: أشرطة تقدم */
+.progress {
+    height: 25px;
+    margin-bottom: 1rem;
+}
+.progress-bar {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.full-image {
+    height: 100vh;
+    width: auto;
+    object-fit: contain;
+}
+#mainSlider{
+
+    border-bottom: #243456;
+    border-bottom-width: thin;
+    /*background-color:  rgba(52, 152, 219, 0.7);;*/
+    background-image: url("../images/images.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;         /* يجعل الصورة تغطي العنصر بالكامل */
+    background-position: left top;
+
+}
+.btn-outline-purple {
+    color: #b889a9; /* بنفسجي */
+    border: 1px solid #b889a9;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-purple:hover {
+    background-color: #b889a0;
+    color: white;
+}
+
+.text-purple {
+    color: #b889a9; /* بنفسجي */
+    /*border: 1px solid #b889a9;*/
+    transition: all 0.3s ease;
+}
+
+
+/* move box from place to place */
+.moving-box {
+    /* التحريك */
+    position: absolute;
+    /*transform: translate(-50%, -50%) translateX(20px);*/
+
+    animation: rotate 2s ease-in-out infinite alternate;
+
+}
+.moving-box:hover {
+    animation-play-state: paused;
+}
+@keyframes rotate {
+    0% {
+        transform: translate(-70%, -50%) rotate(-3deg) translateX(10%);
+    }
+    100% {
+        transform: translate(-70%, -50%) rotate(3deg) translateX(10%);
+    }
+}
+
+
+@keyframes slideRL {
+    /*0%   { transform: translateX(0); }*/
+    0%   { transform: translateY(-80px); }
+    100%   { transform: translateY(+18px); }
+    /*100% { transform: translateX(+200px); }*/
+}
+
+@keyframes slideLR {
+    0%   { transform: translateX(0); }
+    /*0%   { transform: translateY(-70px); }*/
+    /*100%   { transform: translateY(+50px); }*/
+    100% { transform: translateX(+200px); }
+}
+
+@media (max-width: 991.98px) {
+    .moving-box {
+        width: 50% !important;
+        height: auto !important;
+        border-radius: 1rem !important;
+        padding: 2rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .moving-box h3,
+    .moving-box h6{
+        display: none;
+    }
+    .moving-box{
+        display: none;
+        animation-play-state: paused;
+
+    }
+
+}

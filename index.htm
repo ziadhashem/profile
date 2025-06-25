@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>زياد هاشم - Portfolio </title>
+
+  <!-- Bootstrap RTL -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+</head>
+<body>
+<header class="bg-gradient p-3 text-dark">
+  <div class="container d-flex flex-wrap align-items-center justify-content-between">
+    <!-- صورة شخصية واسم -->
+    <div class="d-flex align-items-center mb-2 mb-md-0">
+      <!--<img src="images/myPhoto.png" alt="صورة زياد هاشم" class="rounded-circle" width="60" height="60" />-->
+      <div class="ms-3">
+        <h1 class="h4 mb-0 text-purple">زياد ياسين هاشم |        <small class="text-purple">مطور برمجيات</small>
+        </h1>
+
+        <!--<p class="mb-0 text-dark"><i class="bi bi-envelope-fill text-secondary"></i> e.ziad.y.hashem@gmail.com</p>-->
+        <!--<p class="mb-0 text-dark"><i class="bi bi-phone-fill text-secondary" dir="ltr"></i> +963 953463699</p>-->
+      </div>
+    </div>
+
+    <!-- قائمة التنقل على شكل أزرار -->
+    <nav class="nav mb-2 mb-md-0">
+      <a class="btn  btn-outline-purple me-2 my-1" href="#experience">الخبرة</a>
+      <a class="btn  btn-outline-purple me-2 my-1" href="#skills">المهارات</a>
+      <a class="btn btn-outline-purple me-2 my-1" href="#education">التعليم</a>
+      <a class="btn btn-outline-purple me-2 my-1" href="#training">التدريب</a>
+      <a class="btn btn-outline-purple me-2 my-1" href="#projects">نماذج أعمال</a>
+    </nav>
+
+
+    <!-- أيقونات التواصل وزر السيرة الذاتية -->
+    <div class="d-flex align-items-center ">
+      <a href="https://drive.google.com/file/d/1sBjcqT2LRC9auSkpKKkdabAsAQT_BGb_/view?usp=drive_link" target="_blank" class="btn btn-outline-purple btn-sm">تحميل السيرة الذاتية</a>
+    </div>
+  </div>
+</header>
+
+
+<!-- سلايدر بصورة واحدة بكامل أبعاد الصورة وبجانبها النص -->
+<div id="mainSlider" class="carousel slide " data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container-fluid">
+        <div class="row align-items-center" style="min-height: 100vh;">
+          <!-- صورة الغلاف -->
+          <div class="col-md-4 p-0 full-image">
+            <img src="images/slider-2.png" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="صورة الغلاف" />
+          </div>
+          <!-- النص -->
+          <div class="col-md-8">
+            <div class="d-flex justify-content-end moving-box">
+              <div class="p-4 text-white bg-dark bg-opacity-25 rounded-circle d-flex flex-column justify-content-center align-items-center text-center"
+                   style="width: 550px; height: 550px;">
+                <h3 class="mb-4">الشغف هو الوقود الذي يجعلني أبدأ، والإصرار هو ما يجعلني أستمر.</h3>
+
+                <h6 class="mb-3">
+                  أنا زياد هاشم، مهندس برمجيات بخبرة تزيد عن 6 سنوات في تطوير الأنظمة باستخدام PHP وJavaScript وأطر العمل الحديثة مثل Laravel وSymfony وFlutter.
+                </h6>
+
+                <h6 class="mb-3">
+                  عملت في مشاريع متعددة بدءًا من تطوير الأنظمة المؤسسية (ERP) وصولاً إلى تصميم واجهات أمامية تفاعلية وتجربة مستخدم عالية الجودة.
+                </h6>
+
+                <h6 class="mb-0">
+                  أتقن تصميم واجهات برمجية (APIs) متقدمة، وتحليل احتياجات المشاريع، والعمل الجماعي ضمن بيئات تطوير احترافية. أتميز بالمرونة والقدرة على التعلّم السريع وحل المشكلات التقنية بكفاءة.
+                </h6>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<main class="container py-5">
+  <section id="experience" class="mb-5">
+    <h2 class="mb-4">الخبرة العملية</h2>
+    <div class="row g-4">
+
+      <!-- بطاقة 1 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm  border-4 border-purple">
+          <div class="card-body">
+            <h5 class="card-title">مهندس برمجيات – JOYBOX</h5>
+            <h6 class="card-subtitle mb-2 text-muted">أكتوبر 2024 - الآن | دمشق، سوريا</h6>
+            <p class="card-text">
+              إدارة مشاريع وتقديم الدعم الفني. تطوير API باستخدام Laravel للوصول إلى المحتوى وتسجيل المستخدمين وربط الواجهة الخلفية بالأمامية وتحسين الأداء والأمان.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- بطاقة 2 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm  border-4 border-purple">
+          <div class="card-body">
+            <h5 class="card-title">مهندس برمجيات حر</h5>
+            <h6 class="card-subtitle mb-2 text-muted">يناير 2021 - الآن | سوريا</h6>
+            <p class="card-text">
+              تطوير برمجيات مختلفة باستخدام PHP، ودعم تقني لمشاريع في لبنان.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- بطاقة 3 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm  border-4 border-purple">
+          <div class="card-body">
+            <h5 class="card-title">كبير مطوري برمجيات – ATMIT</h5>
+            <h6 class="card-subtitle mb-2 text-muted">يناير 2022 - يوليو 2023 | بيروت، لبنان</h6>
+            <p class="card-text">
+              تصميم وتطوير تطبيق ERP-Lite متعدد المنصات باستخدام Drupal وFlutter، يشمل أنظمة المبيعات، المحاسبة، المخزون والمشتريات.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- بطاقة 4 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm  border-4 border-purple">
+          <div class="card-body">
+            <h5 class="card-title">مطور برمجيات – ATMIT</h5>
+            <h6 class="card-subtitle mb-2 text-muted">مارس 2019 - ديسمبر 2021 | بيروت، لبنان</h6>
+            <p class="card-text">
+              تطوير أنظمة ERP باستخدام Symfony، إدارة قواعد البيانات، اختبار وتصحيح الأخطاء، تطوير أنظمة المبيعات والموارد البشرية والمشتريات.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- بطاقة 5 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm  border-4 border-purple">
+          <div class="card-body">
+            <h5 class="card-title">مطور مبتدئ – Souccar</h5>
+            <h6 class="card-subtitle mb-2 text-muted">يوليو 2018 - يناير 2019 | دمشق، سوريا</h6>
+            <p class="card-text">
+              تطوير باستخدام ASP.NET MVC، تصميم قواعد البيانات، التكامل مع أنظمة خارجية، تطوير تقارير باستخدام SRSS.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <hr class="mx-auto my-5" style="width: 60%;">
+
+  <!-- قسم المهارات -->
+  <section id="skills" class="mb-5">
+    <h2 class="mb-4">المهارات</h2>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <label class="form-label fw-bold">PHP</label>
+        <div class="progress">
+          <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;">95%</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label fw-bold">JavaScript</label>
+        <div class="progress">
+          <div class="progress-bar bg-warning" role="progressbar" style="width: 85%;">85%</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label fw-bold">Laravel</label>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 85%;">85%</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label fw-bold">Symfony</label>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 85%;">85%</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label fw-bold">Flutter</label>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 60%;">60%</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label fw-bold">CSS3</label>
+        <div class="progress">
+          <div class="progress-bar bg-info" role="progressbar" style="width: 70%;">70%</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label fw-bold">MySQL</label>
+        <div class="progress">
+          <div class="progress-bar bg-danger" role="progressbar" style="width: 80%;">80%</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label fw-bold">REST APIs</label>
+        <div class="progress">
+          <div class="progress-bar bg-secondary" role="progressbar" style="width: 80%;">80%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="mx-auto my-5" style="width: 60%;">
+
+  <section id="education" class="mb-5">
+    <h2 class="mb-4">التعليم</h2>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-5">
+        <div class="card shadow-sm border-start border-4 border-primary h-100">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="bi bi-mortarboard-fill text-primary me-2"></i>
+              بكالوريوس في هندسة المعلوماتية
+            </h5>
+            <h6 class="card-subtitle mb-2 text-muted">جامعة دمشق – 2018</h6>
+            <p class="card-text">
+              تخصص: هندسة البرمجيات ونظم المعلومات. تم خلالها دراسة تحليل النظم، قواعد البيانات، البرمجة بلغات متعددة، وتطوير نظم ERP.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-5">
+        <div class="card shadow-sm border-start border-4 border-success h-100">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="bi bi-award-fill text-success me-2"></i>
+              مؤهلات تقنية إضافية
+            </h5>
+            <ul class="mb-0">
+              <li>نظم التشغيل: Windows, Linux</li>
+              <li>لغات البرمجة: Java, PHP, C#, SQL, JavaScript</li>
+              <li>قواعد البيانات: MySQL, Oracle, MSSQL</li>
+              <li>أطر العمل: Laravel, Symfony, Flutter, ASP.NET</li>
+              <li>أدوات: GIT, SSRS, PHPStorm, NetBeans</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <hr class="mx-auto my-5" style="width: 60%;">
+
+  <section id="languages" class="mb-5">
+    <h2 class="mb-4">اللغات</h2>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100 border-start border-4 border-primary">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="bi bi-translate text-primary me-2"></i>
+              العربية
+            </h5>
+            <p class="card-text">اللغة الأم</p>
+            <div class="progress">
+              <div class="progress-bar bg-primary" style="width: 100%;">100%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100 border-start border-4 border-success">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="bi bi-translate text-success me-2"></i>
+              الإنجليزية
+            </h5>
+            <p class="card-text">جيد جداً (قراءة، كتابة، محادثة)</p>
+            <div class="progress">
+              <div class="progress-bar bg-success" style="width: 85%;">85%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100 border-start border-4 border-info">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="bi bi-translate text-info me-2"></i>
+              الفرنسية
+            </h5>
+            <p class="card-text">أساسي</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" style="width: 40%;">40%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <hr class="mx-auto my-5" style="width: 60%;">
+  <!-- قسم التدريب -->
+
+  <section id="training" class="mb-5">
+    <h2 class="mb-4  ">التدريب</h2>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100 border-start border-4 border-primary">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="bi bi-mortarboard-fill text-primary me-2"></i>
+              تدريب في قسم تكنولوجيا المعلومات
+            </h5>
+            <p class="card-text">بنك البركة – سوريا</p>
+            <small class="text-muted"><i class="bi bi-calendar-event"></i> أبريل 2018</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100 border-start border-4 border-success">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="bi bi-lightbulb-fill text-success me-2"></i>
+              كيف تبدأ مشروعك الخاص؟
+            </h5>
+            <p class="card-text">برنامج شباب - الأمانة السورية للتنمية</p>
+            <small class="text-muted"><i class="bi bi-calendar-event"></i> مايو 2018</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100 border-start border-4 border-info">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="bi bi-code-slash text-info me-2"></i>
+              تطوير تطبيقات الويب المتقدمة باستخدام Laravel
+            </h5>
+            <p class="card-text">المعهد العالي للعلوم التطبيقية والتكنولوجيا - HIAST</p>
+            <small class="text-muted"><i class="bi bi-calendar-event"></i> نوفمبر 2023</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <hr class="mx-auto my-5" style="width: 60%;">
+
+  <!-- قسم المشاريع -->
+  <section id="projects">
+    <h2 class="mb-4 ">نماذج أعمال</h2>
+    <div class="row g-4" id="projects-container">
+      <!-- سيتم توليد البطاقات عبر جافاسكريبت -->
+    </div>
+  </section>
+  <section id="projects-work" class="mb-5">
+    <h2 class="mb-4  ">المشاريع</h2>
+    <div class="row g-4">
+
+      <!-- مشروع 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100 border-4 border-purple">
+          <div class="card-body">
+            <h5 class="card-title">نظام ERP متكامل</h5>
+            <p class="card-text">
+              نظام تخطيط موارد المؤسسات متكامل موجه للشركات، مبني باستخدام إطار العمل <strong>Symfony</strong>. يشمل وحدات إدارة الحسابات، المخزون، الموارد البشرية، والفوترة.
+            </p>
+            <p class="text-muted fst-italic small mt-3">تم التنفيذ ضمن فريق عمل.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- مشروع 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100  border-4 border-purple">
+          <div class="card-body">
+            <h5 class="card-title">ERP Lite متعدد المنصات</h5>
+            <p class="card-text">
+              نظام مبسط لإدارة الشركات الصغيرة باستخدام <strong>Flutter</strong> للواجهة و<strong>Drupal</strong> كنظام إدارة محتوى للبيانات. يعمل على الويب وتطبيقات الهواتف.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- مشروع 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100  border-4 border-purple">
+          <div class="card-body">
+            <h5 class="card-title">نظام إدارة محتوى CMS</h5>
+            <p class="card-text">
+              نظام CMS احترافي مبني بـ<strong>Laravel</strong> مع لوحة تحكم كاملة لإدارة المحتوى والمستخدمين والصلاحيات. قابل للتخصيص والتوسعة.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- مشروع 4 -->
+      <div class="col-md-6 col-lg-4">
+         <div class="card shadow-lg   border-4 border-purple">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">🌐 موقع at3creates.com</h5>
+          <p class="card-text">
+            تصميم وتطوير موقع احترافي لعرض الخدمات الرقمية، يتميز بواجهة مستخدم حديثة وتجربة مستخدم سلسة مع دعم كامل للأجهزة المختلفة.
+          </p>
+          <ul class="list-unstyled">
+            <li>✅ تصميم متجاوب (Responsive)</li>
+            <li>✅ نظام إدارة محتوى ديناميكي</li>
+            <li>✅ هوية بصرية احترافية</li>
+          </ul>
+          <p class="mb-2"><strong>التقنيات:</strong> HTML, CSS, JavaScript, PHP</p>
+          <a href="https://at3creates.com" class="btn btn-primary rounded-pill" target="_blank">🔗 زيارة الموقع</a>
+        </div>
+      </div>
+      </div>
+
+      <!-- مشروع 5 -->
+      <!-- مشروع منازل الأبرار - موقع تعليمي أكاديمي -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-lg border-4 border-purple">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">📚 موقع manazelalabrar.com</h5>
+            <p class="card-text">
+              تطوير موقع تعليمي أكاديمي متكامل باستخدام Laravel، مع نظام إدارة محتوى متقدم لدعم الدورات التعليمية والمواد التفاعلية.
+            </p>
+            <ul class="list-unstyled">
+              <li>✅ نظام إدارة محتوى ديناميكي باستخدام Laravel</li>
+              <li>✅ دعم التسجيل، إدارة الدورات، والاختبارات عبر الإنترنت</li>
+              <li>✅ لوحة تحكم (Admin Dashboard) لإدارة المحتوى</li>
+            </ul>
+            <p class="mb-2"><strong>التقنيات:</strong> Laravel, PHP, MySQL</p>
+            <a href="https://manazelalabrar.com" class="btn btn-primary rounded-pill" target="_blank">🔗 زيارة الموقع</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </section>
+  <hr class="mx-auto my-5" style="width: 60%;">
+
+
+</main>
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row text-center text-md-start">
+
+      <!-- العمود الأول: معلومات الاتصال -->
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h5 class="fw-bold mb-3">   تواصل معي </h5>
+        <p class="mb-1">
+          <i class="bi bi-phone-fill me-1"></i>
+          <span dir="ltr">+963 953 463 699</span>
+        </p>
+        <p class="mb-0">
+          <i class="bi bi-envelope-fill me-1"></i>
+          <a href="mailto:e.ziad.y.hashem@gmail.com" class="text-white text-decoration-underline">
+            e.ziad.y.hashem@gmail.com
+          </a>
+        </p>
+      </div>
+
+      <!-- العمود الثاني: روابط التواصل الاجتماعي -->
+      <div class="col-md-4 mb-3 mb-md-0 text-center">
+        <h5 class="fw-bold mb-3">تابعني</h5>
+        <div class="d-flex justify-content-center gap-3">
+          <!-- GitHub -->
+          <a href="https://github.com/ziadhashem/portfolio" class="fs-4 text-white" target="_blank" aria-label="GitHub">
+            <i class="bi bi-github"></i>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/ziad-yassin-hashem/" class="fs-4" style="color: #0a66c2;" target="_blank" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/ziad.hashem.802950" class="fs-4" style="color: #1877f2;" target="_blank" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- العمود الثالث: زر تحميل السيرة -->
+      <div class="col-md-4 text-md-end text-center">
+        <h5 class="fw-bold mb-3">السيرة الذاتية</h5>
+        <a href="https://drive.google.com/file/d/1sBjcqT2LRC9auSkpKKkdabAsAQT_BGb_/view?usp=drive_link"
+           target="_blank"
+           class="btn btn-outline-light btn-sm">
+          تحميل السيرة الذاتية
+        </a>
+      </div>
+
+
+    </div>
+
+    <!-- خط فاصل -->
+    <hr class="border-light my-4">
+
+    <!-- الحقوق وزر العودة للأعلى -->
+    <div class="text-center position-relative">
+      <p class="mb-0">© 2025 زياد هاشم – جميع الحقوق محفوظة</p>
+
+      <!-- زر العودة للأعلى -->
+      <a href="#" id="backToTopBtn"
+         class="btn btn-outline-purple rounded-circle shadow"
+         style="position: fixed; bottom: 30px; right: 30px; display: none; z-index: 1000;">
+        <i class="bi bi-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
